@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`main 1`] = `
+Object {
+  "entry": "src/index.js",
+  "module": Object {
+    "rules": Array [
+      Object {
+        "loader": "babel-loader",
+        "options": undefined,
+        "test": Object {
+          "and": Array [
+            /\\^\\.\\*\\\\/\\.\\*\\\\\\.js\\$/,
+            /\\^\\\\!\\.\\*\\\\/node_modules\\\\/\\.\\*\\$/,
+          ],
+        },
+      },
+    ],
+  },
+  "output": Object {
+    "filename": "bundle.js",
+    "path": "dist",
+    "publicPath": "/",
+  },
+  "plugins": Array [
+    UglifyJsPlugin {
+      "options": Object {
+        "sourceMap": true,
+      },
+    },
+  ],
+}
+`;
