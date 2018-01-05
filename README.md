@@ -25,7 +25,7 @@ app.asset('src/**/*.js', 'babel-loader')
 app.dest('dist/main.js')
 
 // Production optimizations
-if (process.env.NODE_ENV === true) {
+if (process.env.NODE_ENV === 'production') {
   app.extends('uglify')
 }
 
